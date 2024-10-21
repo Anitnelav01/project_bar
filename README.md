@@ -1,46 +1,58 @@
-# Getting Started with Create React App
+# Alcohol Bar Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React application built with TypeScript, Redux, Redux Toolkit, and Axios. It features an alcohol bar theme with 4 main pages: Home, Favorites, Search, and Product Card.
 
-## Available Scripts
+## Pages
 
-In the project directory, you can run:
+### Home
 
-### `npm start`
+The home page displays a list of products with their respective categories.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Favorites
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The favorites page shows a list of products that the user has added to their favorites.
 
-### `npm test`
+### Search
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The search page allows users to search for products by name or category.
 
-### `npm run build`
+### Product Card
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The product card page displays detailed information about a specific product, including its name, description, ingredients and method of preparation.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Products can be added to and removed from favorites.
+- Products can be filtered by category.
+- The application uses Redux and Redux Toolkit for state management.
+- Axios is used for making API requests to the server.
 
-### `npm run eject`
+## Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Running the Project
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To run the project, use the following command:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+npm start
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Running the Server
 
-## Learn More
+To run the server, use the following command:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+cd server
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+node server
+```
+
+## Technolgies Used
+
+- React
+- TypeScript
+- Redux
+- Redux Toolkit
+- Axios

@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* Глобальные стили */
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background: #201f2e;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+/* Контейнеры */
+.container {
+  padding: 0 32px;
+}
+
+.content-container {
+  margin: 250px 0 150px;
+}
+
+.container-info {
+  height: 100vw;
+  font-size: 30px;
+  text-align: center;
+  width: 100vw;
+  margin: 300px auto;
+}
+
+/* Медиа-запросы */
+@media only screen and (max-width: 320px) {
+  body {
+    width: 320px;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .product-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .product-card {
+    max-width: 48%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .content-container {
+    display: flex;
+    width: 60%;
+    position: relative;
+    margin: 250px auto 150px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .container {
+    padding: 0;
+  }
+}

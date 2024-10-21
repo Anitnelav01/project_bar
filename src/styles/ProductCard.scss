@@ -1,0 +1,167 @@
+/* Заголовок ингредиентов */
+.ingredients-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.09px;
+  margin-bottom: 10px;
+}
+
+/* Описание ингредиентов */
+.ingredients__description {
+  margin: 32px 0;
+}
+
+.ingredients__description-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.13px;
+  letter-spacing: 0.07em;
+  margin: 0;
+}
+
+.ingredients__description-product {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21.09px;
+  text-align: left;
+  color: #c4c1cf;
+  margin: 0;
+}
+
+/* Список ингредиентов */
+.ingredients-list {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 10px;
+
+  .ingredient-name {
+    color: #c4c1cf;
+  }
+
+  .dots {
+    flex: 1;
+    border-bottom: 2px dotted #c4c1cf;
+    margin: 0 5px;
+  }
+
+  .ingredient-amount {
+    color: #c4c1cf;
+    white-space: nowrap;
+  }
+}
+
+.ingredients__description {
+  margin: 0 0 32px 0;
+}
+
+/* Шаги приготовления */
+.ingredients__preparation-steps {
+  margin-bottom: 50px;
+}
+
+.ingredients__preparation-steps-string {
+  p {
+    margin: 0;
+    color: #c4c1cf;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21.09px;
+    text-align: justified;
+  }
+}
+
+.ingredients__preparation-steps-title {
+  margin: 10px 0 8px;
+}
+
+.product-card-ingredients__img {
+  width: 100%;
+  height: 52%;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+.ingredients-card {
+  margin-top: 420px;
+  border-radius: 0 20px 0 0;
+  padding: 20px 32px;
+  background: #0e0d13;
+}
+
+.ingredients-card__button {
+  width: 64px;
+  height: 64px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  color: #c4c1cf;
+  background: #44414e;
+  padding: 15px 24px;
+  position: fixed;
+  z-index: 10;
+  top: 32px;
+  left: 32px;
+
+  &::before {
+    content: "";
+    background-image: url("../icon/Vector-left.svg");
+    background-size: 20px;
+
+    background-size: 17px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    width: 17px;
+    height: 35px;
+    position: absolute;
+    top: 29%;
+    left: 36%;
+  }
+}
+
+.ingredients__favorite-button {
+  position: relative;
+  top: -23px;
+  right: -28px;
+}
+
+.ingredients__ingredients {
+  margin-bottom: 32px;
+}
+
+/* Медиа-запросы */
+@media only screen and (min-width: 1024px) {
+  .product-card {
+    flex: 1 1 calc(33.33% - 20px);
+    margin: 10px;
+    height: 421px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-card {
+    width: calc(33.33% - 20px);
+    max-width: 32%;
+  }
+  .ingredients-card {
+    border-radius: 20px 20px 0 0;
+    width: 60%;
+    margin: 500px auto 0;
+  }
+  .product-card-ingredients__img {
+    width: 60%;
+    height: 72%;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .ingredients-card__button {
+    left: 22%;
+  }
+}

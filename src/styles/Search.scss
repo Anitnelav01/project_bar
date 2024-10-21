@@ -1,0 +1,46 @@
+.container-search {
+  padding: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 250px 0 0 0;
+}
+
+.search-result {
+  width: 320px;
+  height: 421px;
+  object-fit: cover;
+}
+
+.search-title {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 42%;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.13px;
+  letter-spacing: 0.07em;
+  text-align: center;
+}
+
+.search-message {
+  position: absolute;
+  top: 88%;
+}
+
+.search-message__desc {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.13px;
+  letter-spacing: 0.07em;
+  margin: 0;
+}
+
+.search-message__prompt {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21.09px;
+  margin: 0;
+  color: #c4c1cf;
+}

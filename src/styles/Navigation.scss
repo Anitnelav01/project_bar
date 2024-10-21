@@ -1,0 +1,42 @@
+/* Основные стили навигации */
+.nav {
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  display: flex;
+  padding: 0;
+  margin: 60px 0 20px;
+
+  /* Элементы навигации */
+  .nav__item {
+    margin-right: 15px;
+    list-style: none;
+    display: block;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21.09px;
+    text-align: left;
+    color: #ffffff;
+    background: none;
+    cursor: pointer;
+
+    /* Убираем отступ у последнего элемента */
+    &:last-child {
+      margin-right: 0;
+    }
+
+    /* Эффект наведения */
+    &:hover {
+      border-color: #ffffff;
+    }
+  }
+}
+
+/* Активный элемент навигации */
+.nav__item--active.nav__item {
+  border-color: #ffffff;
+}

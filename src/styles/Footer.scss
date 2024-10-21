@@ -1,0 +1,62 @@
+/* Основные стили футера */
+.footer {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #0e0d13; /* Цвет фона футера */
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-radius: 40px 40px 0 0;
+
+  .footer__container {
+    box-sizing: border-box;
+    max-width: 100vw;
+    padding: 0 32px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__favorites-button {
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 40px;
+    border: none;
+    color: #c4c1cf; /* Цвет текста кнопки */
+    background: #44414e; /* Цвет фона кнопки */
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 16.95px;
+    text-align: left;
+    padding: 15px 24px;
+
+    &:hover {
+      background: #353240; /* Цвет фона кнопки при наведении */
+      color: #e9e6f2; /* Цвет текста кнопки при наведении */
+    }
+
+    &:active {
+      background: #120e20; /* Цвет фона кнопки при нажатии */
+      color: #ff005c; /* Цвет текста кнопки при нажатии */
+      border: 1px solid #ff005c; /* Граница кнопки при нажатии */
+    }
+  }
+
+  .footer__search {
+    appearance: none;
+    all: unset;
+    cursor: pointer;
+  }
+}
+
+/* Медиа-запросы */
+@media only screen and (min-width: 1024px) {
+  .footer {
+    width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

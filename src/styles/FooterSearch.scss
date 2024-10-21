@@ -1,0 +1,20 @@
+.footer__search-input {
+  width: 100%;
+  background: #44414e;
+  border: none;
+  border-radius: 25px;
+  padding: 13px 20px;
+  color: #c4c1cf;
+  outline: none;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 16.95px;
+  text-align: left;
+}
+
+.footer__search-clear {
+  all: unset;
+  cursor: pointer;
+  position: absolute;
+  right: 50px;
+}
