@@ -2,14 +2,14 @@ const express = require("express");
 const fs = require("fs");
 const path = require("path");
 const cors = require("cors");
-
+require("dotenv").config();
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 
 // CORS middleware
 app.use(
   cors({
-    origin: "http://localhost:3000", // разрешаем запросы только от этого источника
+    origin: process.env.BASE_URL, // разрешаем запросы только от этого источника
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     headers: ["Content-Type", "Authorization"],
   })
